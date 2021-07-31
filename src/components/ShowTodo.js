@@ -4,7 +4,6 @@ import Todo from "./Todo";
 import {doneTodo, editTodo, removeTodo} from "../actions";
 import TodoForm from "./TodoForm";
 
-
 function ShowTodo() {
     const todos = useSelector(state => state.todo);
     const [edit, setEdit] = useState({

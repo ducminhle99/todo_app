@@ -21,7 +21,12 @@ function Todo({data, updateTodo, completeTodo, removeTodo}) {
             className={data.isComplete ? 'todo-row complete' : 'todo-row'}
             key={data.id}
         >
-            <div key={data.id} onClick={doneTodo} style={{cursor: "pointer"}}>
+            <div key={data.id} onClick={doneTodo} style={{
+                cursor: "pointer",
+                whiteSpace: "nowrap",
+                maxWidth: "23rem",
+                overflow: "hidden",
+                textOverflow: "ellipsis" }}>
                 {data.content}
             </div>
             <div className='icons'>

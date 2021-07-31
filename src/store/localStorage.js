@@ -14,6 +14,7 @@ export const loadState = () => {
 };
 
 export const saveState = state => {
+    // console.log("dang luu thay doi");
     try {
         const data = JSON.stringify(state);
         localStorage.setItem(APP_TODOS_KEY, data);
